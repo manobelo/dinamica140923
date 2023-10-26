@@ -1,20 +1,35 @@
 :root {
   --cinza: #aaa;
-  --vermelha: #e93d50;
-  --vermelha-escura: #af303f;
+  --vermelha: #4682B4;
+  --vermelha-escura: #4682B4;
   --branca: #fff;
   --luz: rgb(229, 255, 0);
 }
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: linear-gradient(45deg, #008000 0%,#23538a 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
 }
+
+.figure{
+  position: relative;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 50px; 
+  right: 500px;
+
+}
+
 
 h1 {
   color: var(--branca);
@@ -61,7 +76,7 @@ h1 {
   box-shadow: 1px 1px 10px var(--luz);
 }
 
-.tecla.active:focus,
+.tecla.ativa:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
